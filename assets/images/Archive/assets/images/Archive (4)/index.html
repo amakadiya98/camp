@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <link href="./assets/css/t-datepicker.min.css" rel="stylesheet" type="text/css">
+    <link href="./assets/css/t-datepicker-orange.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="virtual-map-part">
+        <div class="sidebar-part glass ">
+            <div class="sidebar-top-part shadow-blue">
+                <div class="sidebar-top-content">
+                    <div class="logo-link-part">
+                        <div class="logo-part">
+                            <img src="./assets/images/logo.png" alt="logo" />
+                        </div>
+                        <div class="back-to-page">
+                            <a href="#">back to camp page</a>
+                        </div>
+                    </div>
+                    <div class="user-name-toggle">
+                        <h2>Kamp Velenje</h2>
+                        <button class="toggle-btn">
+                            <img src="./assets/images/right_panel_open.png" alt="right-icon" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="search-section-part">
+                <div class="sidebar-scrollable-part shadow-green">
+                    <div class="scrollable-content-part scrollable-content-desktop">
+                        <div class="search-part inner-bottom-spacing">
+                            <input class="search-field" placeholder="Search pitch number, ATM..." />
+                            <div class="search-icon">
+                                <img src="./assets/images/search.png" alt="search-icon" />
+                            </div>
+                        </div>
+                        <div class="booking-dates inner-bottom-spacing">
+                            <h6 class="field-label">Booking Dates</h6>
+                            <div class="t-datepicker">
+                                <div class="checkin-data-part common-check-data">
+                                    <p>Check-In</p>
+                                    <div class="t-check-in"></div>
+                                </div>
+                                <div class="checkout-data-part common-check-data">
+                                    <p>Check-Out</p>
+                                    <div class="t-check-out"></div>
+                                </div>
+                               
+                                
+                               
+                                
+                              </div>
+                        </div>
+                        <div class="pitch-size inner-bottom-spacing">
+                            <h6 class="field-label">Pitch Size</h6>
+                            <div class="range-picker double-range-picker">
+                                <div class="main">
+                                    <div class="custom-wrapper">
+                                        <div class="price-input-container">
+
+                                            <div class="slider-container">
+                                                <div class="price-slider">
+                                                </div>
+                                            </div>
+                                            <!-- Slider -->
+                                            <div class="range-input">
+                                                <input type="range" class="min-range" min="0" max="10000" value="2500"
+                                                    step="1">
+                                                <input type="range" class="max-range" min="0" max="10000" value="8500"
+                                                    step="1">
+                                            </div>
+                                            <div class="price-input">
+                                                <div class="price-field">
+                                                    <span>Min</span>
+                                                    <div class="measure-part">
+                                                        <input type="number" value="5">
+                                                        <!-- m<sup>2</sup>  -->
+                                                    </div>
+                                                </div>
+                                                <div class="price-field">
+                                                    <span>Max</span>
+                                                    <input type="number" value="180">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shade-coverage inner-bottom-spacing">
+                            <div class="rangle-value-data">
+                                <h6 class="field-label">Shade Coverage</h6>
+                                <div class="value2 range-value-data" id="demo"><span>%</span></div>
+                            </div>
+                            <div class="single-slidecontainer">
+                                <div class="range">
+                                    <input type="range" min="0" max="50" value="0" id="range2" class="range-input2" />
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pitch-type inner-bottom-spacing">
+                            <h6 class="field-label">Pitch type</h6>
+                            <div class="custom-chcekbox-square">
+                                <div class="pitch-data tent">
+                                    <label>
+                                        <input type="checkbox" value="1"><span>tent</span>
+                                    </label>
+                                </div>
+                                <div class="pitch-data caravans">
+                                    <label>
+                                        <input type="checkbox" value="1"><span>caravans</span>
+                                    </label>
+                                </div>
+                                <div class="pitch-data motorhomes">
+                                    <label>
+                                        <input type="checkbox" value="1"><span>motorhomes</span>
+                                    </label>
+                                </div>
+
+                                <div class="pitch-data ptype4">
+                                    <label>
+                                        <input type="checkbox" value="1"><span>pitch type 4</span>
+                                    </label>
+                                </div>
+
+                                <div class="pitch-data ptype5">
+                                    <label>
+                                        <input type="checkbox" value="1"><span>pitch type 5</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="facilities-on-pitch">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Facilities on pitch
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="custom-toggle-switch mb-3">
+                                                <div class="switch">
+                                                    <input type="checkbox" id="switch" /><label
+                                                        for="switch">Toggle</label><span class="ms-2">Shower</span>
+                                                </div>
+                                                <div class="switch">
+                                                    <input type="checkbox" id="switch2" /><label
+                                                        for="switch2">Toggle</label><span class="ms-2">Grill</span>
+                                                </div>
+                                                <div class="switch">
+                                                    <input type="checkbox" id="switch3" /><label
+                                                        for="switch3">Toggle</label><span
+                                                        class="ms-2">Pet-friendly</span>
+                                                </div>
+                                            </div>
+                                            <div class="slider-picker">
+                                                <div class="rangle-value-data align-items-center">
+                                                    <h6 class="field-label">distance to beach</h6>
+                                                    <div class="value3 range-value-data" id="demo2"><span>%</span></div>
+                                                </div>
+                                                <div class="single-slidecontainer">
+                                                    <div class="range">
+                                                        <input type="range" min="0" max="50" value="0" id="range3"
+                                                            class="range-input2" />
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Facilities Access
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="custom-toggle-switch mb-3">
+                                                <div class="switch flex-column-reverse align-items-start">
+                                                    <input type="checkbox" id="switch11" /><label
+                                                        for="switch11">Toggle</label><span class="ms-2 mb-2">Electricity
+                                                        acesss</span>
+                                                </div>
+                                                <div class="switch flex-column-reverse align-items-start">
+                                                    <input type="checkbox" id="switch12" /><label
+                                                        for="switch12">Toggle</label><span class="ms-2 mb-2">Water
+                                                        access</span>
+                                                </div>
+                                                <div class="switch flex-column-reverse align-items-start">
+                                                    <input type="checkbox" id="switch13" /><label
+                                                        for="switch13">Toggle</label><span class="ms-2 mb-2">Toilet
+                                                        access</span>
+                                                </div>
+                                                <div class="switch flex-column-reverse align-items-start">
+                                                    <input type="checkbox" id="switch14" /><label
+                                                        for="switch14">Toggle</label><span class="ms-2 mb-2">Shower
+                                                        aceess</span>
+                                                </div>
+                                                <div class="switch flex-column-reverse align-items-start">
+                                                    <input type="checkbox" id="switch15" /><label
+                                                        for="switch15">Toggle</label><span class="ms-2 mb-2">Washing
+                                                        access</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Nature
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="normal-square-checkbox">
+                                                <p>Ground Type</p>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="html">
+                                                    <label for="html">Grass</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="css">
+                                                    <label for="css">Gravel</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="javascript">
+                                                    <label for="javascript">Sand</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="javascript22">
+                                                    <label for="javascript22">Concrete</label>
+                                                </div>
+                                            </div>
+                                            <div class="normal-square-checkbox mt-3">
+                                                <p>View</p>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="html1">
+                                                    <label for="html1">Lake</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="css1">
+                                                    <label for="css1">Mountain</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="javascript1">
+                                                    <label for="javascript1">Forest</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="javascript11">
+                                                    <label for="javascript11">Sea</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="javascript111">
+                                                    <label for="javascript111">River</label>
+                                                </div>
+                                            </div>
+                                            <div class="slider-picker">
+                                                <div class="rangle-value-data align-items-center">
+                                                    <h6 class="field-label">distance to beach</h6>
+                                                    <div class="value3 range-value-data" id="demo3"><span>m</span></div>
+                                                </div>
+                                                <div class="single-slidecontainer">
+                                                    <div class="range">
+                                                        <input type="range" min="0" max="50" value="0" id="range4"
+                                                            class="range-input2" />
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="scrollable-content-part scrollable-content-mobile pt-4">
+                        <div class="d-flex justify-content-between gap-2 px-3 mb-2">
+                            <div class="search-part w-100">
+                                <input class="search-field" placeholder="Search pitch number, ATM..." />
+                                <div class="search-icon">
+                                    <img src="./assets/images/search.png" alt="search-icon" />
+                                </div>
+                            </div>
+                            <button class="filter-btn open" id="filter-part-visible">
+                                <img class="img-toggle" src="./assets/images/maki_cross.svg" alt="filter-icon" />
+
+                            </button>
+                            
+                        </div>
+                        <div class="toggle-onclick-visible-data">
+                            <div class="booking-dates inner-bottom-spacing">
+                                <h6 class="field-label">Booking Dates</h6>
+                                <div class="t-datepicker">
+                                    <div class="checkin-data-part common-check-data">
+                                        <p>Check-In</p>
+                                        <div class="t-check-in"></div>
+                                    </div>
+                                    <div class="checkout-data-part common-check-data">
+                                        <p>Check-Out</p>
+                                        <div class="t-check-out"></div>
+                                    </div>
+                                   
+                                    
+                                   
+                                    
+                                  </div>
+                            </div>
+                            <div class="pitch-size inner-bottom-spacing">
+                                <h6 class="field-label">Pitch Size</h6>
+                                <div class="range-picker double-range-picker">
+                                    <div class="main">
+                                        <div class="custom-wrapper">
+                                            <div class="price-input-container">
+    
+                                                <div class="slider-container">
+                                                    <div class="price-slider">
+                                                    </div>
+                                                </div>
+                                                <!-- Slider -->
+                                                <div class="range-input">
+                                                    <input type="range" class="min-range" min="0" max="10000" value="2500"
+                                                        step="1">
+                                                    <input type="range" class="max-range" min="0" max="10000" value="8500"
+                                                        step="1">
+                                                </div>
+                                                <div class="price-input">
+                                                    <div class="price-field">
+                                                        <span>Min</span>
+                                                        <div class="measure-part">
+                                                            <input type="number" value="5">
+                                                            <!-- m<sup>2</sup>  -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="price-field">
+                                                        <span>Max</span>
+                                                        <input type="number" value="180">
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shade-coverage inner-bottom-spacing">
+                                <div class="rangle-value-data">
+                                    <h6 class="field-label">Shade Coverage</h6>
+                                    <div class="value2 range-value-data" id="demo"><span>%</span></div>
+                                </div>
+                                <div class="single-slidecontainer">
+                                    <div class="range">
+                                        <input type="range" min="0" max="50" value="0" id="range2" class="range-input2" />
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pitch-type inner-bottom-spacing">
+                                <h6 class="field-label">Pitch type</h6>
+                                <div class="custom-chcekbox-square">
+                                    <div class="pitch-data tent">
+                                        <label>
+                                            <input type="checkbox" value="1"><span>tent</span>
+                                        </label>
+                                    </div>
+                                    <div class="pitch-data caravans">
+                                        <label>
+                                            <input type="checkbox" value="1"><span>caravans</span>
+                                        </label>
+                                    </div>
+                                    <div class="pitch-data motorhomes">
+                                        <label>
+                                            <input type="checkbox" value="1"><span>motorhomes</span>
+                                        </label>
+                                    </div>
+    
+                                    <div class="pitch-data ptype4">
+                                        <label>
+                                            <input type="checkbox" value="1"><span>pitch type 4</span>
+                                        </label>
+                                    </div>
+    
+                                    <div class="pitch-data ptype5">
+                                        <label>
+                                            <input type="checkbox" value="1"><span>pitch type 5</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="facilities-on-pitch">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                Facilities on pitch
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="custom-toggle-switch mb-3">
+                                                    <div class="switch">
+                                                        <input type="checkbox" id="switch" /><label
+                                                            for="switch">Toggle</label><span class="ms-2">Shower</span>
+                                                    </div>
+                                                    <div class="switch">
+                                                        <input type="checkbox" id="switch2" /><label
+                                                            for="switch2">Toggle</label><span class="ms-2">Grill</span>
+                                                    </div>
+                                                    <div class="switch">
+                                                        <input type="checkbox" id="switch3" /><label
+                                                            for="switch3">Toggle</label><span
+                                                            class="ms-2">Pet-friendly</span>
+                                                    </div>
+                                                </div>
+                                                <div class="slider-picker">
+                                                    <div class="rangle-value-data align-items-center">
+                                                        <h6 class="field-label">distance to beach</h6>
+                                                        <div class="value3 range-value-data" id="demo2"><span>%</span></div>
+                                                    </div>
+                                                    <div class="single-slidecontainer">
+                                                        <div class="range">
+                                                            <input type="range" min="0" max="50" value="0" id="range3"
+                                                                class="range-input2" />
+    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                Facilities Access
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="custom-toggle-switch mb-3">
+                                                    <div class="switch flex-column-reverse align-items-start">
+                                                        <input type="checkbox" id="switch11" /><label
+                                                            for="switch11">Toggle</label><span class="ms-2 mb-2">Electricity
+                                                            acesss</span>
+                                                    </div>
+                                                    <div class="switch flex-column-reverse align-items-start">
+                                                        <input type="checkbox" id="switch12" /><label
+                                                            for="switch12">Toggle</label><span class="ms-2 mb-2">Water
+                                                            access</span>
+                                                    </div>
+                                                    <div class="switch flex-column-reverse align-items-start">
+                                                        <input type="checkbox" id="switch13" /><label
+                                                            for="switch13">Toggle</label><span class="ms-2 mb-2">Toilet
+                                                            access</span>
+                                                    </div>
+                                                    <div class="switch flex-column-reverse align-items-start">
+                                                        <input type="checkbox" id="switch14" /><label
+                                                            for="switch14">Toggle</label><span class="ms-2 mb-2">Shower
+                                                            aceess</span>
+                                                    </div>
+                                                    <div class="switch flex-column-reverse align-items-start">
+                                                        <input type="checkbox" id="switch15" /><label
+                                                            for="switch15">Toggle</label><span class="ms-2 mb-2">Washing
+                                                            access</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                Nature
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="normal-square-checkbox">
+                                                    <p>Ground Type</p>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" id="html">
+                                                        <label for="html">Grass</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" id="css">
+                                                        <label for="css">Gravel</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" id="javascript">
+                                                        <label for="javascript">Sand</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" id="javascript22">
+                                                        <label for="javascript22">Concrete</label>
+                                                    </div>
+                                                </div>
+                                                <div class="normal-square-checkbox mt-3">
+                                                    <p>View</p>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" id="html1">
+                                                        <label for="html1">Lake</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" id="css1">
+                                                        <label for="css1">Mountain</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" id="javascript1">
+                                                        <label for="javascript1">Forest</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" id="javascript11">
+                                                        <label for="javascript11">Sea</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" id="javascript111">
+                                                        <label for="javascript111">River</label>
+                                                    </div>
+                                                </div>
+                                                <div class="slider-picker">
+                                                    <div class="rangle-value-data align-items-center">
+                                                        <h6 class="field-label">distance to beach</h6>
+                                                        <div class="value3 range-value-data" id="demo3"><span>m</span></div>
+                                                    </div>
+                                                    <div class="single-slidecontainer">
+                                                        <div class="range">
+                                                            <input type="range" min="0" max="50" value="0" id="range4"
+                                                                class="range-input2" />
+    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebar-footer-part">
+                                <div class="sidebar-footer-btn">
+                                    <button id="apply-filter-btn2" class="s-fotter-btn">apply filters</button>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                  
+                </div>
+
+
+                <div class="sidebar-footer-part sidebar-footer-part-desktop">
+                    <div class="sidebar-footer-btn">
+                        <button id="apply-filter-btn" class="s-fotter-btn">apply filters</button>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- search-page -->
+            <div>
+                <!-- <button id="result-back-button">back</button> -->
+                <div class="sidebar-scrollable-part scroll-search">
+                    <div class="scrollable-content-part">
+                        <div class="search-result-data">
+                            <div class="num-of-search-result"><button id="result-back-button"><img class="me-2 mb-1"
+                                        src="./assets/images/left-arrow.svg" alt="left-arrow"></button> search
+                                results
+                            </div>
+                            <div class="custom-card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <div class="card-content">
+                                    <div class="img-part">
+                                        <img src="./assets/images/custom-card-img.svg" alt="tent-img" width="100%">
+                                    </div>
+                                    <div class="text-part">
+                                        <h4>Pitch 1</h4>
+                                        <div class="five-star-div">
+                                            <h5><img class="mb-1" src="./assets/images/star.svg" alt="star">5</h5>
+                                            <h6 class="ms-2">(653)</h6>
+                                        </div>
+                                        <h6><img class="me-2" src="./assets/images/wb_shade.svg" alt="shade">15m² of
+                                            shade
+                                        </h6>
+                                        <h6><img class="me-2" src="./assets/images/crop.svg" alt="shade">150m² area</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="custom-card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <div class="card-content">
+                                    <div class="img-part">
+                                        <img src="./assets/images/custom-card-img.svg" alt="tent-img" width="100%">
+                                    </div>
+                                    <div class="text-part">
+                                        <h4>Pitch 1</h4>
+                                        <div class="five-star-div">
+                                            <h5><img class="mb-1" src="./assets/images/star.svg" alt="star">5</h5>
+                                            <h6 class="ms-2">(653)</h6>
+                                        </div>
+                                        <h6><img class="me-2" src="./assets/images/wb_shade.svg" alt="shade">15m² of
+                                            shade
+                                        </h6>
+                                        <h6><img class="me-2" src="./assets/images/crop.svg" alt="shade">150m² area</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="custom-card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <div class="card-content">
+                                    <div class="img-part">
+                                        <img src="./assets/images/custom-card-img.svg" alt="tent-img" width="100%">
+                                    </div>
+                                    <div class="text-part">
+                                        <h4>Pitch 1</h4>
+                                        <div class="five-star-div">
+                                            <h5><img class="mb-1" src="./assets/images/star.svg" alt="star">5</h5>
+                                            <h6 class="ms-2">(653)</h6>
+                                        </div>
+                                        <h6><img class="me-2" src="./assets/images/wb_shade.svg" alt="shade">15m² of
+                                            shade
+                                        </h6>
+                                        <h6><img class="me-2" src="./assets/images/crop.svg" alt="shade">150m² area</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <div class="card-content">
+                                    <div class="img-part">
+                                        <img src="./assets/images/custom-card-img.svg" alt="tent-img" width="100%">
+                                    </div>
+                                    <div class="text-part">
+                                        <h4>Pitch 1</h4>
+                                        <div class="five-star-div">
+                                            <h5><img class="mb-1" src="./assets/images/star.svg" alt="star">5</h5>
+                                            <h6 class="ms-2">(653)</h6>
+                                        </div>
+                                        <h6><img class="me-2" src="./assets/images/wb_shade.svg" alt="shade">15m² of
+                                            shade
+                                        </h6>
+                                        <h6><img class="me-2" src="./assets/images/crop.svg" alt="shade">150m² area</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="custom-card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <div class="card-content">
+                                    <div class="img-part">
+                                        <img src="./assets/images/custom-card-img.svg" alt="tent-img" width="100%">
+                                    </div>
+                                    <div class="text-part">
+                                        <h4>Pitch 1</h4>
+                                        <div class="five-star-div">
+                                            <h5><img class="mb-1" src="./assets/images/star.svg" alt="star">5</h5>
+                                            <h6 class="ms-2">(653)</h6>
+                                        </div>
+                                        <h6><img class="me-2" src="./assets/images/wb_shade.svg" alt="shade">15m² of
+                                            shade
+                                        </h6>
+                                        <h6><img class="me-2" src="./assets/images/crop.svg" alt="shade">150m² area</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade search-result-modal" id="exampleModal" tabindex="-1"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="search-result-data">
+                                    <div class="full-card">
+                                        <div class="full-card-content">
+                                            <div class="img-part">
+                                                <img src="./assets/images/full-tent-img.svg" alt="full-tent">
+                                            </div>
+                                            <div class="text-part">
+                                                <h3>
+                                                    Pitch 1
+                                                </h3>
+                                                <div class="five-star-div">
+                                                    <h5><img class="mb-1" src="./assets/images/star.svg" alt="star">5
+                                                    </h5>
+                                                    <h6 class="ms-2 ">(653)</h6>
+                                                </div>
+                                                <h6><img class="me-2" src="./assets/images/full-card-wb_shade.svg"
+                                                        alt="shade">15m² of shade
+                                                </h6>
+                                                <h6><img class="me-2" src="./assets/images/full-card-cross.svg"
+                                                        alt="shade">150m² area</h6>
+                                                <h6><img class="me-2" src="./assets/images/water.svg" alt="water">20m
+                                                    from Frog Lake</h6>
+                                                <h6><img class="me-2" src="./assets/images/view-point.svg"
+                                                        alt="view-point">View of the
+                                                    forest</h6>
+                                                <h6><img class="me-2" src="./assets/images/men-women.svg"
+                                                        alt="view-point">20m from toilet
+                                                </h6>
+                                                <h6><img class="me-2" src="./assets/images/local_bar.svg"
+                                                        alt="view-point">20m from bar</h6>
+                                                <div class="modal-button">
+                                                    <button class="s-fotter-btn">BOOK NOW</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-part">
+            <div class="header-content">
+                <div class="owl-carousel" id="header-slider">
+                    <div class="item">
+                        <div class="header-box">
+                            <img class="me-2" src="./assets/images/header-imgs/local_dining.svg" alt="">
+                            <h5>Food & Drink</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header-box">
+                            <img class="me-2" src="./assets/images/header-imgs/info.svg" alt="">
+                            <h5>Information</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header-box"><img class="me-2" src="./assets/images/header-imgs/wc.svg" alt="">
+                            <h5>WC</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header-box"><img class="me-2" src="./assets/images/header-imgs/local_atm.svg" alt="">
+                            <h5>ATM</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header-box"><img class="me-2" src="./assets/images/header-imgs/pool.svg" alt="">
+                            <h5>Water sports</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header-box"><img class="me-2" src="./assets/images/header-imgs/sports_golf.svg" alt="">
+                            <h5>Minigolf</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header-box">
+                            <img class="me-2" src="./assets/images/header-imgs/local_dining.svg" alt="">
+                            <h5>Food & Drink</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header-box">
+                            <img class="me-2" src="./assets/images/header-imgs/info.svg" alt="">
+                            <h5>Information</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header-box"><img class="me-2" src="./assets/images/header-imgs/wc.svg" alt="">
+                            <h5>WC</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header-box"><img class="me-2" src="./assets/images/header-imgs/local_atm.svg" alt="">
+                            <h5>ATM</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header-box"><img class="me-2" src="./assets/images/header-imgs/pool.svg" alt="">
+                            <h5>Water sports</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header-box"><img class="me-2" src="./assets/images/header-imgs/sports_golf.svg" alt="">
+                            <h5>Minigolf</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header-box">
+                            <img class="me-2" src="./assets/images/header-imgs/local_dining.svg" alt="">
+                            <h5>Food & Drink</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header-box">
+                            <img class="me-2" src="./assets/images/header-imgs/info.svg" alt="">
+                            <h5>Information</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header-box"><img class="me-2" src="./assets/images/header-imgs/wc.svg" alt="">
+                            <h5>WC</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header-box"><img class="me-2" src="./assets/images/header-imgs/local_atm.svg" alt="">
+                            <h5>ATM</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header-box"><img class="me-2" src="./assets/images/header-imgs/pool.svg" alt="">
+                            <h5>Water sports</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header-box"><img class="me-2" src="./assets/images/header-imgs/sports_golf.svg" alt="">
+                            <h5>Minigolf</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-map-part"> 
+
+        </div>
+    </div>
+   
+
+    <!--phone-modal-carousel -->
+
+    <div class="phone-modal-carousel">
+        <div class="modal-carosel">
+            <div class="owl-carousel" id="modal-slider">
+                <div class="item">
+                    <div class="modal-card-content">
+                        <img src="./assets/images/tent-img-phone.svg" alt="">
+                        <div class="text-content">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h3>Pitch 1</h3>
+                                </div>
+                                <div class="d-flex">
+                                    <img class="mb-1" src="./assets/images/star.svg" width="20px" height="20px" alt="star">
+                                    <h5>5</h5>
+                                    <h6 class="ms-2">(653)</h6>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-2">
+                                <div class="d-flex"><img class="me-2" src="./assets/images/wb_shade.svg"
+                                        width="20px" height="20px" alt="shade">
+                                    <h6>15m² of shade</h6>
+                                </div>
+                                <div class="d-flex ms-5"><img class="me-2" src="./assets/images/crop.svg" width="20px" height="20px"
+                                        alt="shade">
+                                    <h6>150m² area</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button>BOOK NOW</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="modal-card-content">
+                        <img src="./assets/images/tent-img-phone.svg" alt="">
+                        <div class="text-content">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h3>Pitch 1</h3>
+                                </div>
+                                <div class="d-flex">
+                                    <img class="mb-1" src="./assets/images/star.svg" width="20px" height="20px" alt="star">
+                                    <h5>5</h5>
+                                    <h6 class="ms-2">(653)</h6>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-2">
+                                <div class="d-flex"><img class="me-2" src="./assets/images/wb_shade.svg"
+                                        width="20px" height="20px" alt="shade">
+                                    <h6>15m² of shade</h6>
+                                </div>
+                                <div class="d-flex ms-5"><img class="me-2" src="./assets/images/crop.svg" width="20px" height="20px"
+                                        alt="shade">
+                                    <h6>150m² area</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <button>BOOK NOW</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="modal-card-content">
+                        <img src="./assets/images/tent-img-phone.svg" alt="">
+                        <div class="text-content">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h3>Pitch 1</h3>
+                                </div>
+                                <div class="d-flex">
+                                    <img class="mb-1" src="./assets/images/star.svg" width="20px" height="20px" alt="star">
+                                    <h5>5</h5>
+                                    <h6 class="ms-2">(653)</h6>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-2">
+                                <div class="d-flex"><img class="me-2" src="./assets/images/wb_shade.svg"
+                                        width="20px" height="20px" alt="shade">
+                                    <h6>15m² of shade</h6>
+                                </div>
+                                <div class="d-flex ms-5"><img class="me-2" src="./assets/images/crop.svg" width="20px" height="20px"
+                                        alt="shade">
+                                    <h6>150m² area</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button>BOOK NOW</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="modal-card-content">
+                        <img src="./assets/images/tent-img-phone.svg" alt="">
+                        <div class="text-content">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h3>Pitch 1</h3>
+                                </div>
+                                <div class="d-flex">
+                                    <img class="mb-1" src="./assets/images/star.svg" width="20px" height="20px" alt="star">
+                                    <h5>5</h5>
+                                    <h6 class="ms-2">(653)</h6>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-2">
+                                <div class="d-flex"><img class="me-2" src="./assets/images/wb_shade.svg"
+                                        width="20px" height="20px" alt="shade">
+                                    <h6>15m² of shade</h6>
+                                </div>
+                                <div class="d-flex ms-5"><img class="me-2" src="./assets/images/crop.svg" width="20px" height="20px"
+                                        alt="shade">
+                                    <h6>150m² area</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button>BOOK NOW</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="modal-card-content">
+                        <img src="./assets/images/tent-img-phone.svg" alt="">
+                        <div class="text-content">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h3>Pitch 1</h3>
+                                </div>
+                                <div class="d-flex">
+                                    <img class="mb-1" src="./assets/images/star.svg" width="20px" height="20px" alt="star">
+                                    <h5>5</h5>
+                                    <h6 class="ms-2">(653)</h6>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-2">
+                                <div class="d-flex"><img class="me-2" src="./assets/images/wb_shade.svg"
+                                        width="20px" height="20px" alt="shade">
+                                    <h6>15m² of shade</h6>
+                                </div>
+                                <div class="d-flex ms-5"><img class="me-2" src="./assets/images/crop.svg" width="20px" height="20px"
+                                        alt="shade">
+                                    <h6>150m² area</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button>BOOK NOW</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="modal-card-content">
+                        <img src="./assets/images/tent-img-phone.svg" alt="">
+                        <div class="text-content">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h3>Pitch 1</h3>
+                                </div>
+                                <div class="d-flex">
+                                    <img class="mb-1" src="./assets/images/star.svg" width="20px" height="20px" alt="star">
+                                    <h5>5</h5>
+                                    <h6 class="ms-2">(653)</h6>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-2">
+                                <div class="d-flex"><img class="me-2" src="./assets/images/wb_shade.svg"
+                                        width="20px" height="20px" alt="shade">
+                                    <h6>15m² of shade</h6>
+                                </div>
+                                <div class="d-flex ms-5"><img class="me-2" src="./assets/images/crop.svg" width="20px" height="20px"
+                                        alt="shade">
+                                    <h6>150m² area</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <button>BOOK NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+   
+
+
+
+</body>
+<script src='./assets/JS/JQuery.js'></script>
+<script src="./assets/JS/t-datepicker.min.js"></script>
+<script src='./assets/JS/owl.carousel.min.js'></script>
+<script src="./assets/JS/bootstrap.bundle.min.js"></script>
+<script src="./assets/JS/custom.js"></script>
+</html>

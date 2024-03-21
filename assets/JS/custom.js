@@ -293,3 +293,33 @@ const nextIcon = '<img class="nextIcon" src="./assets/images/header-imgs/header-
             $(".virtual-map-part").toggleClass("close-sidebar-data");  
         });  
     });  
+
+    $(document).ready(function() {
+        $(window).resize(function() {
+          if ($(window).width() <= 767) {
+            $('.sidebar-part').removeClass('close-sidebar');
+            $(".virtual-map-part").removeClass("close-sidebar-data");  
+          }
+        });
+      
+        $('#closeSidebar').click(function() {
+          $('.sidebar-part').addClass('close-sidebar');
+          $(".virtual-map-part").addClass("close-sidebar-data");  
+        });
+      });
+
+
+      // close btn for filter-mobile-part 
+
+      document.addEventListener("DOMContentLoaded", function() {
+        const button = document.getElementById("filter-part-visible");
+        const img = button.querySelector(".img-toggle");
+        
+        button.addEventListener("click", function() {
+            if (img.src.includes("maki_cross.svg")) {
+                img.src = "./assets/images/filter_list.svg"; 
+            } else {
+                img.src = "./assets/images/maki_cross.svg"; 
+            }
+        });
+    });

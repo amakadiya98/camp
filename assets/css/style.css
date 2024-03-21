@@ -57,7 +57,7 @@
     --orange: #FF6E4B;
 }
 body{
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .virtual-map-part {
@@ -77,6 +77,20 @@ body{
 }
 .virtual-map-part.close-sidebar-data .header-part{
     width: calc(100vw - 80px);
+}
+.virtual-map-part.close-sidebar-data .main-map-part{
+    position: absolute;
+    left: 80px;
+    top: 110px;
+}
+.main-map-part{
+    position: absolute;
+    left: 400px;
+    top: 110px;
+}
+.map-iframe iframe{
+    width: 100vw;
+    height: 100vh;
 }
 .sidebar-part {
     width: 400px;
@@ -929,6 +943,10 @@ body{
         width: 100%;
         max-width: 100%;
         height: auto;
+    }
+    .main-map-part{
+        left: 0;
+        top: auto;
     }
     .phone-modal-carousel{
         display: block;
